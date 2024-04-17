@@ -11,6 +11,7 @@ passwordFields.forEach(function (field) {
 
     generateButton.classList.add('psg-btn');
     generateButton.setAttribute('title', 'Generar contraseña');
+    generateButton.setAttribute('type', 'button');
 
     let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     let path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
