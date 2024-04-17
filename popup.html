@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSGenerator</title>
+    <link rel="stylesheet" href="./src/css/output.css">
+</head>
+
+<body>
+    <main class="w-[300px] max-w-[300px] h-full py-4 flex flex-col justify-center items-center">
+        <header class="w-full">
+            <h1 class="text-center text-3xl font-bold md:text-5xl lg:text-6xl">
+                <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">PSGenerator</span>
+            </h1>
+        </header>
+
+        <div class="px-4 py-2 flex justify-center items-center rounded-md w-[250px] mt-4 text-center shadow-lg hidden"
+            id="alert">
+            <span class="text-lg text-gray-200 font-semibold"></span>
+        </div>
+
+        <div class="w-[250px] max-w-[250px] mt-4 px-4 py-2 bg-base-300 rounded-md shadow-lg text-center">
+            <span class="text-lg text-gray-200 font-semibold break-words cursor-pointer" id="password-display">
+                Configura tu contraseña
+            </span>
+        </div>
+
+        <div class="w-[250px] max-w-[250px] mt-6">
+            <div class="form-control">
+                <label class="label" for="password-length">
+                    <span class="label-text text-gray-200 font-semibold">Tamaño de la contraseña</span>
+                </label>
+                <input type="range" min="8" max="25" class="range range-primary range-xs" value="8"
+                    id="password-length">
+                <label class="label" for="password-length">
+                    <span class="label-text text-gray-200 font-semibold" id="password-length-display">8</span>
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="label-text text-gray-200 font-semibold">Mayúsculas</span>
+                    <input type="checkbox" class="checkbox checkbox-primary" id="uppercase">
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="label-text text-gray-200 font-semibold">Minúsculas</span>
+                    <input type="checkbox" class="checkbox checkbox-primary" id="lowercase" checked>
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="label-text text-gray-200 font-semibold">Números</span>
+                    <input type="checkbox" class="checkbox checkbox-primary" id="numbers">
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="label-text text-gray-200 font-semibold">Símbolos</span>
+                    <input type="checkbox" class="checkbox checkbox-primary" id="symbols">
+                </label>
+            </div>
+
+            <div class="w-full mt-6">
+                <button class="w-full btn btn-primary" id="generate-password">
+                    Generar contraseña
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer-center p-4 bg-base-300">
+        <aside>
+            <p class="text-center text-sm text-gray-400">
+                Creado por
+                <a class="underline font-bold hover:text-accent" href="https://github.com/JoshuaMc1" target="_blank">
+                    @JoshuaMclean
+                </a>
+            </p>
+        </aside>
+    </footer>
+    <script type="module" src="./src/js/app-min.js"></script>
+</body>
+
+</html>

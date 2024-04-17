@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "PSGenerator Extension",
+    "description": "Genere contraseñas seguras al instante con PSGenerator. Es simple, rápido y seguro.",
+    "version": "1.0",
+    "permissions": [
+        "clipboardWrite"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "src/images/icon16.png",
+            "48": "src/images/icon48.png",
+            "128": "src/images/icon128.png",
+            "256": "src/images/icon256.png"
+        }
+    },
+    "icons": {
+        "16": "src/images/icon16.png",
+        "48": "src/images/icon48.png",
+        "128": "src/images/icon128.png",
+        "256": "src/images/icon256.png"
+    }
+}
